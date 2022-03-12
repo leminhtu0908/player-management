@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--Book search view-->
+		<record model="ir.ui.view" id="view_player_search">
+			<field name="name">player.search</field>
+			<field name="model">player.player</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search string="Player Information Search">
+					<field name="name" string="Player Name"/>
+					<field name="pos" string="Player pos"/>
+				</search>
+			</field>
+		</record>
+		
+	<!--Book tree view-->
+		<record model="ir.ui.view" id="view_player_tree">
+			<field name="name">player.tree</field>
+			<field name="model">player.player</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="List of players">
+					<field name="name"/>
+					<field name="portfolio"/>
+					<field name="coach"/>
+					<field name="pos"/>
+					<field name="birthday"/>
+					<field name="active"/>
+				</tree>
+			</field>
+		</record>
+	
+	<!--Book form view-->
+		<record model="ir.ui.view" id="view_player_form">
+			<field name="name">player.form</field>
+			<field name="model">player.player</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Player">
+						<field name="name" string="Name:"/>
+						<field name="coach" string="Coach(s):"/>
+						<field name="pos" string="Position"/>
+						<field name="birthday" string="Birthday:"/>
+						<field name="active" string="Active ?"/>
+						<field name="portfolio" string="Number of portfolios:"/>
+						<field name="notes" string="My Notes" placeholder="Put details of this player..."/>
+				</form>
+			</field>
+		</record>
+		
+	<!--Book Action-->
+		 <record model="ir.actions.act_window" id="action_player">
+            <field name="name">Player Information</field>
+            <field name="res_model">player.player</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+		
+		 <record model="ir.actions.act_window" id="action_player_tree">
+            <field name="name">Player Information</field>
+            <field name="res_model">player.player</field>
+            <field name="view_type">tree</field>
+            <field name="view_mode">tree</field>
+        </record>
+	</data>
+</openerp>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!--Player Menu-->
+		<menuitem id="player_parent" name="Player Management" icon="STOCK_OPEN"/>
+		<menuitem id="menu_player_parent" name="Players" parent="player_parent"/>
+		<menuitem action="action_player" id="menu_player_player" parent="menu_player_parent" string="Result"/>
+		<menuitem action="action_player_tree" name="List of players" id="menu_player_tree" parent="menu_player_parent" string="List of players"/>
+	</data>
+</openerp>

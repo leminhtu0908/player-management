@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!--Player-->
+		<record id="ct1" model="player.player">
+			<field name="name">Lê Vinh</field>
+			<field name="portfolio">250</field>
+			<field name="coach">Sir Alex</field>
+			<field name="pos">Tiền vệ</field>
+			<field name="birthday">1996/10/13</field>
+			<field name="active">True</field>
+		</record>
+		<record id="ct2" model="player.player">
+			<field name="name">Tú Ngu</field>
+			<field name="portfolio">250</field>
+			<field name="coach">Bậu ngu</field>
+			<field name="pos">Tiền vệ</field>
+			<field name="birthday">1996/10/13</field>
+			<field name="active">True</field>
+		</record>
+	</data>
+</openerp>
