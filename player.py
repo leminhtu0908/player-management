@@ -8,6 +8,7 @@ class player (osv.osv):
         'name':fields.char('Tên cầu thủ', size=25, required=True, translate=True),
         'portfolio':fields.integer('Tổng số danh hiệu'),
         'coach':fields.char('HLV',size=100, required=True, translate=True),
+        'name_club':fields.char('Tên Câu Lạc Bộ',size=100, required=True, translate=True),
         'pos':fields.selection([('td','Tiền đạo'),('tv','Tiền vệ'),
                                  ('hv','Hậu vệ'),('gk','Thủ môn')],'Vị trí'),
         'birthday':fields.datetime('Ngày sinh'),

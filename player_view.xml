@@ -24,6 +24,7 @@
 					<field name="name"/>
 					<field name="portfolio"/>
 					<field name="coach"/>
+					<field name="name_club"/>
 					<field name="pos"/>
 					<field name="birthday"/>
 					<field name="active"/>
@@ -41,6 +42,7 @@
 						<field name="name" string="Name:"/>
 						<field name="coach" string="Coach(s):"/>
 						<field name="pos" string="Position"/>
+						<field name="name_club" string="Name Club"/>
 						<field name="birthday" string="Birthday:"/>
 						<field name="active" string="Active ?"/>
 						<field name="portfolio" string="Number of portfolios:"/>
